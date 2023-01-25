@@ -1,0 +1,50 @@
+.footer {
+    height:100%;
+    /* border: 1px solid red; */
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 20px;   
+    z-index: -2; 
+}
+
+.socialMediaFooter {
+    min-width: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    border-bottom: 1px solid #424a75;
+    margin: 20px 450px;
+    padding-bottom: 20px;
+    z-index: -1;
+}
+
+.signature {
+    color: #6D75A4;
+    text-align: center;
+    font-size: 12px;
+    margin-bottom: 40px;
+}
+
+#iconLinkedin{
+    font-size: 25px;
+    cursor: pointer;
+    color: #6D75A4;
+    z-index: 0;
+}
+
+#iconLinkedin:hover {
+    color:#7e86b6;
+}
+
+#iconGithub {
+    font-size: 25px;
+    cursor: pointer;
+    color: #6D75A4;
+    z-index: 0;
+}
+
+#iconGithub:hover {
+    color: #7e86b6;
+}

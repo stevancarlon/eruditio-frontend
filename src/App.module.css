@@ -1,0 +1,8 @@
+.homeBgImg {
+    background: url('assets/welcome-img.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+}
+

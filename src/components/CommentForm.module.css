@@ -1,0 +1,175 @@
+.commentForm {
+    display: flex;
+    /* border: 1px solid red; */
+    width: 100%;
+    justify-content: center;
+    gap: 10px;
+    height: 70px;
+    margin-bottom: 10px;
+}
+
+.commentForm input {
+    width: 100%;
+    background-color: #424769;
+    outline: none;
+    border: none;
+    padding-left: 15px;
+    border-radius: 5px;
+    color: white;
+}
+
+.commentForm input::placeholder {
+    color: #6D75A4;
+
+}
+
+.commentForm button {
+    background-color: #424769;
+    color: #6D75A4;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.commentForm button:hover {
+    transition: all 0.3s;
+    color:white;
+}
+
+.commentContainer {
+    background-color: #424769;
+    color: #6D75A4;
+    width: 100%;
+    /* border: 1px solid red; */
+    margin: 5px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.commentContainer p {
+    margin-left: 30px;
+}
+
+.username {
+    font-weight: 900;
+    color: #979dbe;
+    cursor: pointer;
+}
+
+.username:hover {
+    color: #e0e2ed;
+}
+
+.comment {
+    color: #e0e2ed;
+}
+
+.imageNickContainer {
+    display: flex;
+    width: 100%;
+}
+
+.picInComments {
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: -10px;
+}
+
+.picInComments img {
+    width: 100%;
+  height: 100%;
+  display: block;
+  image-rendering: crisp-edges;
+  cursor: pointer;
+}
+
+.nickCommentContainer {
+    text-align: left;
+    width: 100%;
+}
+
+#userIcon {
+    font-size: 35px;
+    cursor:pointer;
+}
+
+.commentDate {
+    font-weight: 300;
+}
+
+.commentHeader {
+    display: flex;
+    align-items: center;
+    /* border: 1px solid red; */
+    width: 100%;
+    justify-content: space-between;
+}
+
+.lastFlex {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.commentIcons {
+    display: flex;
+    gap: 10px;
+    margin-right: 20px;
+}
+
+#editCommIcon:hover {
+    color: white;
+    cursor: pointer;
+}
+
+#deleteCommIcon:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.editComment {
+    display: flex;
+    gap: 10px;
+    margin-right: 10px;
+}
+
+.editComment button {
+    background-color: #606588;
+    border:none;
+    border-radius: 10px;
+    color:#a2a6c0;
+    cursor: pointer;
+}
+.editComment button:hover {
+    background-color: #606588;
+    border:none;
+    border-radius: 10px;
+    color:#ffffff;
+}
+
+
+.editComment textarea {
+    background-color: #3d4266;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    width: 100%;
+}
+
+.editComment textarea::placeholder {
+    color: #6D75A4
+}
+
+@media (max-width: 388px) {
+    .commentDate {
+        display: none;
+    }
+}

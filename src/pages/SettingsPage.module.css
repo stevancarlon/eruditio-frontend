@@ -1,0 +1,124 @@
+.userInfo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #A5ACD6;
+}
+
+#settingsIcon {
+    font-size: 55px;
+    color: #A5ACD6;
+}
+
+.boxContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 50%;
+    overflow: auto;
+    margin: 0 auto;
+    /* justify-content: stretch; */
+}
+
+.aboutInfo {
+    text-align: center;
+    width: 100%;
+    color: #A5ACD6;
+
+}
+
+.aboutTitle {
+    border-bottom: 3px solid #F9B17A;
+    display: inline;
+}
+
+.settingsOption:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    color: white;
+}
+
+.emailForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.emailForm input {
+    background-color: #424769;
+    border: none;
+    color:#A5ACD6;
+    padding: 15px 10px;
+    width: 45%;
+}
+
+.emailForm input:focus {
+    box-shadow: inset 2px 0 0 0 #F9B17A;
+    /* border-left: 2px solid #F9B17A; */
+    outline: none;
+}
+
+.emailForm button[type="submit"] {
+    background-color: #F9B17A;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.emailForm button[type="submit"]:hover {
+    background-color: #F9B17A;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #2D3250;
+    cursor: pointer;
+    box-shadow: 0px 1px 12px #F9B17A;
+}
+
+.emailForm button[type="button"] {
+    background-color: #424769;
+    color: #A5ACD6;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.emailForm button[type="button"]:hover {
+    background-color: #424769;
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+@media (max-width: 900px) {
+    .boxContainer {
+        width: 500px;
+    }
+
+    #settingsIcon {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 500px) {
+    .boxContainer {
+        width: 350px;
+    }
+}
+
+@media (max-width: 350px) {
+    .boxContainer {
+        width: 300px;
+    }
+}

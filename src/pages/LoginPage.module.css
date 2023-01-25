@@ -1,0 +1,49 @@
+.loginComponents {
+    text-align: left;
+    margin-left: 40px;
+    padding-top: 20px;
+    display:flex;
+    flex-direction: column;
+}
+
+.loginTitle {
+    font-weight: 900;
+    font-size: 33px;
+}
+
+.loginSubtitle {
+    margin-top: -30px;
+}
+
+.flexBox {
+    display:flex;
+    justify-content: space-between;
+    margin-right: 15%;
+    align-items: center;
+}
+
+
+.loginOptions {
+    margin-top: 15px;
+    color: #6D75A4;
+    font-size: 9px;
+    cursor: pointer;
+}
+
+
+.rememberPass {
+    margin-top: 1px;
+    display:flex;
+    justify-content: space-between;
+    width: 100%;
+
+}
+
+.rememberCheckbox {
+    display: flex;
+}
+
+.checkbox {
+    transform: translateY(7%);
+    margin-right: 5px;
+}

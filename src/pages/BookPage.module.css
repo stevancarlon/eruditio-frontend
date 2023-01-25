@@ -1,0 +1,147 @@
+.bookTitle {
+    color: white;
+    border-bottom: 3px solid #f9b17a;
+    font-size: 25px;
+    display: inline-block;
+}
+
+.bookInfo {
+    text-align: left;
+    color: white;
+    width: 90%;
+}
+
+.bookContent {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+}
+
+.book {
+    width: 200px;
+    height: 250px;
+    /* border: 1px solid red; */
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.bookCover {
+    width: 100%;
+    height: 100%;
+}
+
+.btnAndComments {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.commentsLink {
+    color: #6d75a4;
+    cursor: pointer;
+}
+
+.commentsLink:hover {
+    transition: all 0.3s;
+    color: white;
+}
+
+.titleAndFavorite {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 20px;
+}
+
+#favoriteIcon {
+    font-size: 22px;
+    cursor: pointer;
+}
+
+#favoriteIcon:hover {
+    fill: white;
+    /* background-color: white; */
+}
+
+#favoritedIcon {
+    font-size: 22px;
+    color: rgb(188, 32, 32);
+    transition: color 0.4s;
+    animation: heartbeat 1s 1;
+    cursor: pointer;
+}
+
+@keyframes heartbeat {
+    0% {
+        transform: scale(1.25);
+    }
+    20% {
+        transform: scale(1);
+    }
+    40% {
+        transform: scale(1.25);
+    }
+    60% {
+        transform: scale(1);
+    }
+    80% {
+        transform: scale(1.25);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.wrapingLink {
+    text-align: center;
+}
+
+@media (max-width: 508px) {
+    .bookContent {
+      flex-direction: column;
+    }
+
+    .book {
+      /* border: 1px solid red; */
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      
+    }
+
+    .book img {
+      border-radius: 15px;
+    }
+    .bookCover {
+      width: 200px;
+      height: 250px;
+    }
+
+    .bookInfo {
+      text-align: center;
+      width: 100%;
+    }
+
+    .titleAndFavorite {
+      text-align: center;
+      position: relative;
+      display: flex;
+      justify-content: center;
+    }
+
+    #favoriteIcon {
+      position: absolute;
+      right: 0;
+    }
+
+    #favoritedIcon {
+      position: absolute;
+      right: 0;
+    }
+
+    .bookTitle {
+      text-align: center;
+      /* width: 100%; */
+    }
+}

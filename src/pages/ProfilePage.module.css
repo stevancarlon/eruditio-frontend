@@ -1,0 +1,171 @@
+.userInfo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #A5ACD6;
+}
+
+.username{
+    /* border: 1px solid red; */
+}
+
+.profilePic {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+    border: 7px solid transparent;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.profilePic:hover {
+    border: 7px solid #2D3250;
+    background-color: #2D3250;
+}
+
+.profilePic img {
+    width: 100%;
+  height: 100%;
+  display: block;
+  image-rendering: crisp-edges;
+}
+
+#userIcon {
+    color: #a5acd6;
+    font-size: 75px;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+#userIcon:hover {
+    border-radius: 50%;
+    border: 2px solid #2D3250;
+    background-color: #2D3250;
+}
+
+.boxContainer {
+    display: grid;
+    grid-template-columns: 1.6fr 1fr;
+    width: 100%;
+    overflow: auto;
+    /* justify-content: stretch; */
+}
+
+.aboutInfo {
+    text-align: left;
+    width: 100%;
+    color: #A5ACD6;
+    padding-left: 26px;
+}
+
+.aboutTitle {
+    border-bottom: 3px solid #F9B17A;
+    display: inline;
+}
+
+.bookTitle {
+    cursor: pointer;
+    font-weight: 900;
+}
+
+.bookTitle:hover {
+    color: white;
+}
+
+.flexAboutTitle {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.flexAboutTitle p {
+    padding: 0;
+    margin: 0;
+}
+
+
+
+#editIcon {
+    cursor: pointer;
+    font-size: 20px;
+}
+
+#editIcon:hover {
+    color: white;
+}
+
+.flexEditAbout {
+    display: flex;
+    flex-direction: column;
+    margin-right: 25px;
+}
+
+.flexEditAbout textarea {
+    max-width: 100%;
+    height: 100px;
+    background-color: #424769;
+    border: 0;
+    padding: 20px;
+    color: white;
+    margin-top: 20px;
+}
+
+.flexEditAbout textarea::placeholder {
+    color: #9ca2c7;
+}
+
+.flexButton {
+    text-align: center;
+}
+
+.saveImgBtn {
+    cursor: pointer;
+    background-color: #424769;
+    border: none;
+    padding: 10px;
+    color: #A5ACD6;
+    margin-top: 10px;
+}
+
+.saveImgBtn:hover {
+    color: white;
+}
+
+.flexFavComm {
+    display: flex;
+    flex-direction: column;
+}
+
+.eachComment {
+    border-bottom: 1px solid #9ca2c7;
+    margin-right: 25px;
+}
+
+.bookLink {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.bookLink:hover {
+    color: white;
+}
+
+@media (max-width: 750px) {
+    .boxContainer {
+        display: flex;
+        flex-direction: column;
+    }
+    .eachComment {
+        border-bottom: 0;
+    }
+}
+
+@media (max-width: 660px) {
+    .profilePic {
+        margin-top: 15px;
+    }
+}

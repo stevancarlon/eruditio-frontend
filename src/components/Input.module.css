@@ -1,0 +1,19 @@
+.input {
+    margin-right:15%;
+    background-color: #424769;
+    border: none;
+    height: 40px;
+    color: white;
+    margin-top: 5px;
+    padding-left: 15px;
+}
+
+.input::placeholder {
+    color: #6D75A4;
+}
+
+.input:focus {
+    box-shadow: inset 2px 0 0 0 #F9B17A;
+    /* border-left: 2px solid #F9B17A; */
+    outline: none;
+}

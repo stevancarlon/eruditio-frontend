@@ -1,0 +1,72 @@
+
+.dropBox {
+    background-color:#424769;
+    border-radius: 15px;
+    position: absolute;
+    /* display: flex; */
+    /* flex-direction: column; */
+    font-size: 15px;
+    z-index: 1;
+    top: 40px;
+    box-shadow: 0 10px 20px 0.1px #161825;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    right:0;
+    width: 150px;
+}
+
+.dropBox p {
+    margin:0;
+    padding:10px;
+    margin-bottom: 15px;
+    color: #afb3cd;
+}
+
+
+.dropBox p:hover {
+    background-color: #6D75A4;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.itemFlex {
+    display:flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+#dropBoxIcon {
+    font-size: 20px;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(0)
+    }
+
+    50% {
+        opacity: 0.5;
+        transform: translateY(1rem)
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.menu--open {
+    animation: fadeIn 0.5s ease-in-out;
+    visibility: visible;
+}
+
+
+.menu--close {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 2s, opacity 0.2s linear;
+}

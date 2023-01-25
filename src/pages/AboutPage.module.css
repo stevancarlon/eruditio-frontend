@@ -1,0 +1,52 @@
+.userInfo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #A5ACD6;
+}
+
+#aboutIcon {
+    font-size: 55px;
+    color: #A5ACD6;
+}
+
+.boxContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 50%;
+    overflow: auto;
+    margin: 0 auto;
+    /* justify-content: stretch; */
+}
+
+.aboutInfo {
+    text-align: center;
+    width: 100%;
+    color: #A5ACD6;
+}
+
+.aboutTitle {
+    border-bottom: 3px solid #F9B17A;
+    display: inline;
+}
+
+@media (max-width: 660px) {
+    #aboutIcon {
+        margin-top: 20px;
+    }
+
+    .boxContainer {
+        width: 450px;
+    }
+}
+
+@media (max-width: 450px) {
+    #aboutIcon {
+        margin-top: 20px;
+    }
+
+    .boxContainer {
+        width: 300px;
+    }
+}

@@ -1,0 +1,91 @@
+.chooseGenre {
+    display: flex;
+    width: 100%;
+    /* border: 1px solid black; */
+    gap: 20px;
+    font-weight: 700;
+    align-items: center;
+    /* margin-left: 60px; */
+}
+
+.booksGrid {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.book {
+    width:200px;
+    height: 250px;
+    background-color: #283249;
+    margin-bottom: 25px;
+    border-bottom: 5px solid #F9B17A;
+    cursor: pointer;
+    transition: transform .2s;
+    overflow:hidden;
+    display: flex;
+    position:relative;
+    /* align-items: center; */
+    justify-content: center;
+
+}
+
+.bookInfo {
+    background-color: rgba(40, 50, 73, .7);
+    opacity: 0.8;
+    height: 30%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding-left: 10px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.book:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 20px 1px #12161f;
+    /* z-index: 1; */
+}
+
+.animated:hover {
+    z-index: 1;
+}
+
+.book:hover .bookInfo {
+    transition: all 1s;
+    opacity: 1;
+    visibility: visible;
+    color: white;
+}
+
+
+.bookAuthor {
+    font-size: 10px;
+    margin-top: -10px;
+}
+
+.bookCover {
+    width: 100%;
+    height: 100%;
+
+}
+
+.smallMargin {
+    margin-top: 40px;
+}
+
+@media (max-width: 490px) {
+    .book {
+        width: 150px;
+        height: 200px;
+    }
+
+    .bookInfo {
+        visibility: visible;
+        opacity: 1;
+        color: white;
+    }
+}

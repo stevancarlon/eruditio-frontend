@@ -1,0 +1,32 @@
+.main {
+    /* border: 1px solid black; */
+    text-align: center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.exploreText {
+    width: 500px;
+    text-align: left;
+    /* border: 1px solid black; */
+    padding: 15px;
+}
+
+.homepageImg {
+    width: 400px;
+}
+
+@media (max-width: 760px) {
+    /* .main {
+        flex-direction: column;
+    } */
+    .homepageImg {
+        display: none;
+    }
+
+    .exploreText {
+        padding: 35px;
+    }
+}
+
